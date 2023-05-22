@@ -1,3 +1,3 @@
-export default function Index() {
-  return <h1>Hello</h1>;
-}
+import Index from "../src/pages/index";
+
+export default Index;
