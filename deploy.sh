@@ -1,9 +1,8 @@
 #!/bin/bash
-rm -rf ~/afina;
-sleep 10;
-mkdir -p ~/afina;
-cp -r . ~/afina;
-cd ~/afina;
+rm -rf /$USER/afina;
+mkdir -p /$USER/afina;
+cp -r . /$USER/afina;
+cd /$USER/afina;
 npm install;
 npm run build;
 npm run start
