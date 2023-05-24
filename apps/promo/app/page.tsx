@@ -1,8 +1,5 @@
-import { Metadata } from "next";
 import Index from "../src/pages/index";
+import metadata from "../src/pages/index/meta";
 
 export default Index;
-export const metadata: Metadata = {
-  title: "Afina-platform",
-  description: "Af",
-};
+export { metadata };
