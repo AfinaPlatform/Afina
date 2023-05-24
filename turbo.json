@@ -13,6 +13,7 @@
     },
     "start": {
       "persistent": true
-    }
+    },
+    "test": {}
   }
 }
