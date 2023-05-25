@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "e2e:watch": "cypress open",
-    "e2e": "cypress run"
+    "e2e:run": "cypress run",
+    "e2e": "start-server-and-test dev http://localhost:3000 e2e:run"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "sass": "^1.62.1"
   },
   "devDependencies": {
-    "cypress": "^12.13.0"
+    "cypress": "^12.13.0",
+    "start-server-and-test": "^2.0.0"
   }
 }
