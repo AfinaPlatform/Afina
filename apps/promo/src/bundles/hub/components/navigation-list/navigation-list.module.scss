@@ -1,0 +1,15 @@
+.item {
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, min-content);
+  align-items: center;
+  column-gap: 12px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 4px 6px;
+  transition: 0.3s;
+}
+
+.item:hover {
+  border: 1px solid black;
+}

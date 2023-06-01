@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+  database:
+    container_name: afina_prod_database
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - "./db/prod/data:/data/db"
+  backend:
+    build:
+      context: "./apps/backend"
+    container_name: afina_prod_backend
+    ports:
+      - "3001:3001"
+    depends_on:
+      - database
+    environment:
+      - AFINA_DB_URL=mongodb://database:27017/afina
+  promo:
+    build:
+      context: ./apps/promo
+    container_name: afina_prod_promo
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    environment:
+      - AFINA_BACKEND_URL=http://backend:3001

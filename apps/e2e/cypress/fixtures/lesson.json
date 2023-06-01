@@ -1,0 +1,10 @@
+{
+  "title": "Lesson 1",
+  "description": "Lesson description",
+  "content": [
+    {
+      "type": "header",
+      "content": "Lesson header"
+    }
+  ]
+}

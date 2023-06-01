@@ -1,5 +1,5 @@
-import Index from "../src/bundles/index/index";
-import { metadata } from "../src/bundles/index/meta";
+import Index from "@/bundles/index/";
+import { metadata } from "@/bundles/index/meta";
 
 export default Index;
 export { metadata };

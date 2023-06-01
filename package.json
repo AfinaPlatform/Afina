@@ -6,9 +6,8 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "start": "turbo run start",
-    "test": "turbo run test",
-    "e2e": "turbo run e2e",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "project-health": "turbo run project-health"
   },
   "devDependencies": {
     "@turbo/gen": "^1.9.7",

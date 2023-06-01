@@ -14,7 +14,6 @@
     "start": {
       "persistent": true
     },
-    "test": {},
-    "e2e": {}
+    "project-health": {}
   }
 }

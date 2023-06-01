@@ -1,4 +1,5 @@
 import css from "./index.module.scss";
+import LinkButton from "@/shared/components/link-button";
 
 export default function Index() {
   return (
@@ -21,9 +22,11 @@ export default function Index() {
           enjoyable than ever before :)
         </p>
       </div>
-      <p data-button-stub className={css.soon}>
-        Soon...
-      </p>
+      <div className={css.startWrapper}>
+        <LinkButton href="/hub" data-start-link>
+          Start
+        </LinkButton>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,11 @@
+.root {
+  font-size: 32px;
+
+  @media (min-width: 768px) {
+    font-size: 48px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 62px;
+  }
+}

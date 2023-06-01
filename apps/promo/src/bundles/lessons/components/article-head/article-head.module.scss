@@ -1,0 +1,28 @@
+@import "@/styles/design.scss";
+
+.root {
+  margin-bottom: 32px;
+
+  @media (min-width: $laptop) {
+    margin-bottom: 64px;
+  }
+}
+
+.backLinkWrapper {
+  margin-bottom: 48px;
+  max-width: 100px;
+
+  @media (min-width: $laptop) {
+    margin-bottom: 64px;
+  }
+}
+
+.title {
+  font-size: 34px;
+  line-height: 120%;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 54px;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-watch": "cypress open",
+    "test-ci": "cypress run --browser chromium"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.13.0",
+    "typescript": "^5.0.4"
+  }
+}
