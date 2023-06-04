@@ -1,8 +1,16 @@
 .root {
-  padding: 4px 16px;
-  background-color: rgb(88, 88, 160);
+  padding: 12px 24px;
+  background-color: #1ec67f;
   color: white;
   border-radius: 8px;
   display: block;
   text-align: center;
+  width: 100%;
+  font-size: 20px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.root:hover {
+  background-color: #21dd8f;
 }

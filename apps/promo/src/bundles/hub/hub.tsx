@@ -10,7 +10,7 @@ const links: LinkType[] = [
         <LessonIcon />
       </Icon>
     ),
-    title: "lessons",
+    title: "Lessons",
     href: "/lessons",
   },
 ];

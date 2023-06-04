@@ -19,7 +19,7 @@ export const Default = () => (
               <LessonIcon />
             </Icon>
           ),
-          title: "lessons",
+          title: "Lessons",
         },
       ]}
     />

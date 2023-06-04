@@ -14,14 +14,16 @@ type NavigationListProps = {
 
 export default function NavigationList({ links }: NavigationListProps) {
   return (
-    <ul data-navigation-list>
+    <ul data-navigation-list className={css.root}>
       {links.map(({ href, title, icon }) => (
         <li key={title} data-navigation-list-item>
           <Link href={href}>
-            <span className={css.item}>
-              <span>{icon}</span>
-              <span>{title}</span>
-            </span>
+            <div className={css.item}>
+              <div className={css.iconWrapper}>
+                <span>{icon}</span>
+              </div>
+              <span className={css.text}>{title}</span>
+            </div>
           </Link>
         </li>
       ))}

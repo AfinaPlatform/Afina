@@ -1,15 +1,47 @@
+@import "@/styles/design.scss";
+
+.root {
+  display: grid;
+  column-gap: 24px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $laptop) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
 .item {
-  display: inline-grid;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(2, min-content);
+  display: flex;
+  justify-content: center;
   align-items: center;
-  column-gap: 12px;
-  border: 1px solid transparent;
+  flex-direction: column;
+  border: 2px solid transparent;
   border-radius: 8px;
-  padding: 4px 6px;
+  padding: 24px;
   transition: 0.3s;
+
+  @media (min-width: $laptop) {
+    aspect-ratio: 16/4;
+  }
 }
 
 .item:hover {
-  border: 1px solid black;
+  border: 2px solid #c4bebe;
+}
+
+.iconWrapper {
+  margin-bottom: 12px;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #424242;
 }
