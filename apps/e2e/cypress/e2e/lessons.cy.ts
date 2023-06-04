@@ -31,7 +31,7 @@ describe("Lessons page", () => {
   });
 
   it("should exist list of available lessons", async () => {
-    cy.fixture(lesson).then((lesson) => {
+    cy.fixture("lesson").then((lesson) => {
       cy.request("POST", `${backendUrl}/lessons/add`, lesson).then((res) => {
         const lessonId = res.body.lessonId;
 

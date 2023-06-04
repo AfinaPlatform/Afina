@@ -3,25 +3,30 @@ import lesson from "../fixtures/lesson";
 const { backendUrl } = Cypress.env();
 
 describe("Lesson page", () => {
-  let lessonId;
+  let id;
   let data;
 
-  beforeEach(() => {
+  before(() => {
     cy.fixture("lesson").then((lesson) => {
-      cy.request("POST", `${backendUrl}/lessons/add`, lesson).then((res) => {
-        lessonId = res.body.lessonId;
-        data = lesson;
-
-        cy.visit(`/lessons/${lessonId}`);
-      });
+      cy.request("POST", `${backendUrl}/lessons/add`, lesson).then(
+        (response) => {
+          const { lessonId } = response.body;
+          data = lesson;
+          id = lessonId;
+        }
+      );
     });
   });
 
-  it("title should exist", () => {
+  beforeEach(() => {
+    cy.visit(`/lessons/${id}`);
+  });
+
+  it("title", () => {
     cy.title().should("eq", data.title);
   });
 
-  it("meta description should exist", () => {
+  it("meta description", () => {
     cy.get('meta[name="description"]').should(
       "have.attr",
       "content",
@@ -29,25 +34,47 @@ describe("Lesson page", () => {
     );
   });
 
-  it("h1 should exist", () => {
+  it("h1", () => {
     cy.get("h1").should("have.text", data.title);
-  });
-
-  it("article should exist", () => {
-    cy.get("article").should("exist");
   });
 
   it("back link button should exist", () => {
     cy.get("a[data-back-link").should("have.text", "Back");
-
     cy.get("a[data-back-link]").click();
     cy.location("pathname").should("eq", "/lessons");
     cy.go("back");
   });
 
-  afterEach(() => {
+  describe("content", () => {
+    it("header", () => {
+      const header = data.content.find((chunk) => chunk.type === "header");
+
+      cy.get("div[data-article-body] h2").should("have.text", header.content);
+    });
+
+    it("subheader", () => {
+      const subheader = data.content.find(
+        (chunk) => chunk.type === "subheader"
+      );
+
+      cy.get("div[data-article-body] h3").should(
+        "have.text",
+        subheader.content
+      );
+    });
+
+    it("paragraph", () => {
+      const paragraph = data.content.find(
+        (chunk) => chunk.type === "paragraph"
+      );
+
+      cy.get("div[data-article-body] p").should("have.text", paragraph.content);
+    });
+  });
+
+  after(() => {
     cy.request("POST", `${backendUrl}/lessons/remove`, {
-      id: lessonId,
+      id,
     });
   });
 });

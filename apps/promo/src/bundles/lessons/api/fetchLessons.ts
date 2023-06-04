@@ -7,7 +7,7 @@ const backend = process.env.backend;
 export default async function fetchLessons(): Promise<Lesson[]> {
   try {
     const response = await fetch(`${backend}/lessons/`, {
-      cache: "no-cache",
+      cache: "no-store",
     });
 
     if (response.ok) {

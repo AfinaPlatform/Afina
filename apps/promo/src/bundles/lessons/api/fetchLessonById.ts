@@ -8,7 +8,9 @@ export default async function fetchLessonById(
   id: Lesson["id"]
 ): Promise<Lesson | null> {
   try {
-    const response = await fetch(`${backend}/lessons/${id}`);
+    const response = await fetch(`${backend}/lessons/${id}`, {
+      cache: "no-store",
+    });
     if (response.ok) {
       const data = await response.json();
       const lessonFromServer: LessonFromServer = data.lesson;

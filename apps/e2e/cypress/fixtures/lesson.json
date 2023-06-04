@@ -5,6 +5,14 @@
     {
       "type": "header",
       "content": "Lesson header"
+    },
+    {
+      "type": "subheader",
+      "content": "Magna laboris occaecat sunt sit occaecat reprehenderit commodo nisi est commodo laboris in esse velit."
+    },
+    {
+      "type": "paragraph",
+      "content": "Sit reprehenderit duis excepteur non et pariatur. Qui proident exercitation labore mollit qui sunt amet cupidatat et eu sunt. Consectetur veniam aliqua dolore aute aliqua pariatur adipisicing."
     }
   ]
 }

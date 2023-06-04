@@ -20,14 +20,13 @@ services:
       - AFINA_DB_URL=mongodb://database:27017/afina
   promo:
     build:
-      context: ./apps/promo
+      context: ./apps/promo/
+      dockerfile: Dockerfile.e2e
     container_name: afina_e2e_promo
     ports:
       - "3000:3000"
     depends_on:
       - backend
-    environment:
-      - AFINA_BACKEND_URL=http://backend:3001
   e2e:
     build:
       context: ./apps/e2e

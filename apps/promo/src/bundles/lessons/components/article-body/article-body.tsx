@@ -10,7 +10,7 @@ type ArticleProps = {
 
 export default function ArticleBody({ content }: ArticleProps) {
   return (
-    <div className={css.root}>
+    <div className={css.root} data-article-body>
       {content.map((chunk, i) => {
         const { content, type } = chunk;
 
