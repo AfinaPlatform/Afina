@@ -24,7 +24,7 @@ export default function Index() {
       </div>
       <div className={css.startWrapper}>
         <LinkButton href="/hub" data-start-link>
-          Start
+          Начать
         </LinkButton>
       </div>
     </div>
