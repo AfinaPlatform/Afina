@@ -4,16 +4,12 @@ services:
     container_name: afina_e2e_database
     image: mongo
     restart: always
-    ports:
-      - "27017:27017"
     volumes:
       - "./db/e2e/data:/data/db"
   backend:
     build:
       context: "./apps/backend"
     container_name: afina_e2e_backend
-    ports:
-      - "3001:3001"
     depends_on:
       - database
     environment:
@@ -23,8 +19,6 @@ services:
       context: ./apps/promo/
       dockerfile: Dockerfile.e2e
     container_name: afina_e2e_promo
-    ports:
-      - "3000:3000"
     depends_on:
       - backend
   e2e:
@@ -33,8 +27,6 @@ services:
     container_name: afina_e2e_e2e
     depends_on:
       - promo
-    ports:
-      - "3002:3002"
     environment:
       - AFINA_PROMO_URL=http://promo:3000
       - AFINA_BACKEND_URL=http://backend:3001
