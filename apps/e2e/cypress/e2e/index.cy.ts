@@ -35,7 +35,7 @@ describe("Index page", () => {
 
   it("link to hub should exist", () => {
     cy.get("a[data-start-link]")
-      .should("have.text", "Start")
+      .should("have.text", "Начать")
       .should("have.attr", "href", "/hub");
 
     cy.get("a[data-start-link]").click();

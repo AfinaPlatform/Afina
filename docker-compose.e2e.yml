@@ -4,8 +4,6 @@ services:
     container_name: afina_e2e_database
     image: mongo
     restart: always
-    volumes:
-      - "./db/e2e/data:/data/db"
   backend:
     build:
       context: "./apps/backend"
