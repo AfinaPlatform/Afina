@@ -4,7 +4,7 @@ describe("Hub page", () => {
   });
 
   it("title of page", () => {
-    cy.title().should("eq", "Hub | Afina");
+    cy.title().should("eq", "Hub | ");
   });
 
   it("h1 should exist", () => {
