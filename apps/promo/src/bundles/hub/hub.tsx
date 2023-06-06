@@ -10,13 +10,13 @@ const links: LinkType[] = [
         <LessonIcon />
       </Icon>
     ),
-    title: "Lessons",
+    title: "Уроки",
     href: "/lessons",
   },
 ];
 
 export default function Hub() {
   return (
-    <Base header={<H1>Hub</H1>} content={<NavigationList links={links} />} />
+    <Base header={<H1>Хаб</H1>} content={<NavigationList links={links} />} />
   );
 }

@@ -1,7 +1,14 @@
+@import "@/styles/design.scss";
+
 .root {
   h2 {
     margin-top: 36px;
     margin-bottom: 8px;
+
+    @media (min-width: $tablet) {
+      margin-top: 42px;
+      margin-bottom: 16px;
+    }
 
     &:first-child {
       margin-top: 0;
@@ -11,6 +18,11 @@
   h3 {
     margin-top: 18px;
     margin-bottom: 8px;
+
+    @media (min-width: $tablet) {
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
   }
 
   p {

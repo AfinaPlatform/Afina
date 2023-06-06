@@ -10,7 +10,7 @@ export default async function Lessons() {
 
   return (
     <BaseLayout
-      header={<H1>Lessons</H1>}
+      header={<H1>Уроки</H1>}
       content={
         <>
           {lessons.length === 0 && <NoLessons />}

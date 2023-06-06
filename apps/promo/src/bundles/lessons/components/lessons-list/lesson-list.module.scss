@@ -1,0 +1,18 @@
+@import "@/styles/design.scss";
+
+.root {
+  font-size: 16px;
+  line-height: 120%;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $laptop) {
+    font-size: 24px;
+  }
+}
+
+.root a {
+  color: #464646;
+}

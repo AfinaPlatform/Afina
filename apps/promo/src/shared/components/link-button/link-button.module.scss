@@ -1,12 +1,14 @@
+@import "@/styles/design.scss";
+
 .root {
-  padding: 12px 24px;
+  padding: 8px;
   background-color: #1ec67f;
   color: white;
   border-radius: 8px;
   display: block;
   text-align: center;
   width: 100%;
-  font-size: 20px;
+  font-size: 16px;
   box-sizing: border-box;
   transition: 0.3s;
 }

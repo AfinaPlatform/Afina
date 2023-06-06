@@ -4,18 +4,18 @@ describe("Hub page", () => {
   });
 
   it("title of page", () => {
-    cy.title().should("eq", "Hub | Afina");
+    cy.title().should("eq", "Хаб | Afina");
   });
 
   it("h1 should exist", () => {
-    cy.get("h1").should("have.text", "Hub");
+    cy.get("h1").should("have.text", "Хаб");
   });
 
   it("meta description should exist", () => {
     cy.get('meta[name="description"]').should(
       "have.attr",
       "content",
-      "Discover a world of learning opportunities on our educational platform. Explore our menu page to access a wealth of resources, including engaging lessons, innovative applications, and much more."
+      "Откройте для себя мир обучения на нашей образовательной платформе. Исследуйте нашу страницу меню, чтобы получить доступ к богатству ресурсов, включая увлекательные уроки, инновационные приложения и многое другое."
     );
   });
 

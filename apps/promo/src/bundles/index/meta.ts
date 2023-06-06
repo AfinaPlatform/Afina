@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Afina-platform",
+  title: "Afina",
   description:
-    "Afina-Platform, the modern technology online platform where you can learn anything. Explore a vast array of courses, resources, and interactive tools to expand your knowledge and skills.",
+    "Afina - современная онлайн-платформа, где вы можете изучить что угодно. Исследуйте широкий спектр курсов, ресурсов и интерактивных инструментов, чтобы расширить свои знания и навыки.",
 };

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test-watch": "cypress open",
-    "test-ci": "cypress run --browser chromium"
+    "test-watch": "cypress open --browser chrome",
+    "test-ci": "cypress run --browser chrome"
   },
   "keywords": [],
   "author": "",

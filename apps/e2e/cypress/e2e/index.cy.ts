@@ -4,7 +4,7 @@ describe("Index page", () => {
   });
 
   it("title of page", () => {
-    cy.title().should("eq", "Afina-platform");
+    cy.title().should("eq", "Afina");
   });
 
   it("h1 should exist", () => {
@@ -15,21 +15,21 @@ describe("Index page", () => {
     cy.get('meta[name="description"]').should(
       "have.attr",
       "content",
-      "Afina-Platform, the modern technology online platform where you can learn anything. Explore a vast array of courses, resources, and interactive tools to expand your knowledge and skills."
+      "Afina - современная онлайн-платформа, где вы можете изучить что угодно. Исследуйте широкий спектр курсов, ресурсов и интерактивных инструментов, чтобы расширить свои знания и навыки."
     );
   });
 
   it("welcome text should exist", () => {
     cy.get("p[data-welcome-text").should(
       "have.text",
-      "Welcome to our online learning platform!"
+      "Добро пожаловать на нашу онлайн-платформу!"
     );
   });
 
   it("short description should exist", () => {
     cy.get("p[data-info-text").should(
       "have.text",
-      "We believe that learning should be an engaging and enjoyable experience, which is why we've designed our platform to be as fun and interesting as watching a movie. With our engaging multimedia content, interactive quizzes, and gamified learning experiences, you'll find that the learning process is easier and more enjoyable than ever before :)"
+      "Мы считаем, что обучение должно быть интересным и увлекательным процессом, поэтому мы разработали нашу платформу таким образом, чтобы она была так же увлекательна и интересна, как просмотр фильма. 😌"
     );
   });
 

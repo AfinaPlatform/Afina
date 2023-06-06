@@ -1,0 +1,11 @@
+@import "@/styles/design.scss";
+
+.root {
+  font-size: 20px;
+  line-height: 120%;
+  color: #202020;
+
+  @media (min-width: $tablet) {
+    font-size: 28px;
+  }
+}

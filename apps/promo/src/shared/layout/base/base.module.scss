@@ -1,12 +1,14 @@
-.root {
-  padding: 24px 12px;
+@import "@/styles/design.scss";
 
-  @media (min-width: 768px) {
-    padding: 32px 24px;
+.root {
+  padding: 24px 16px;
+
+  @media (min-width: $tablet) {
+    padding: 48px 32px;
   }
 
-  @media (min-width: 1280px) {
-    padding: 48px 32px;
+  @media (min-width: $laptop) {
+    padding: 64px 48px;
   }
 }
 

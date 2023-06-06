@@ -8,25 +8,25 @@ describe("Lessons page", () => {
   });
 
   it("title of page", () => {
-    cy.title().should("eq", "Lessons | Afina");
+    cy.title().should("eq", "Уроки | Afina");
   });
 
   it("meta description should exist", () => {
     cy.get('meta[name="description"]').should(
       "have.attr",
       "content",
-      "Discover comprehensive and engaging lessons on Afina, the leading educational platform. Explore our vast library of expertly crafted lessons across various subjects and disciplines."
+      "Откройте для себя всеобъемлющие и увлекательные уроки на Afina - ведущей образовательной платформе. Исследуйте нашу обширную библиотеку мастерски созданных уроков по различным предметам и дисциплинам."
     );
   });
 
   it("h1 should exist", () => {
-    cy.get("h1").should("have.text", "Lessons");
+    cy.get("h1").should("have.text", "Уроки");
   });
 
   it("should exist message if there are no lessons", () => {
     cy.get("p[data-no-lessons-message]").should(
       "have.text",
-      "There are no lessons yet"
+      "Пока нет уроков."
     );
   });
 

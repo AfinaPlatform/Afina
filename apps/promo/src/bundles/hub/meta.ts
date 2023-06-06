@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Hub | Afina",
+  title: "Хаб | Afina",
   description:
-    "Discover a world of learning opportunities on our educational platform. Explore our menu page to access a wealth of resources, including engaging lessons, innovative applications, and much more.",
+    "Откройте для себя мир обучения на нашей образовательной платформе. Исследуйте нашу страницу меню, чтобы получить доступ к богатству ресурсов, включая увлекательные уроки, инновационные приложения и многое другое.",
 };
