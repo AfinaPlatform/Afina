@@ -1,5 +1,7 @@
 import lesson from "../fixtures/lesson";
 
+// TODO add test for end button
+
 const { backendUrl } = Cypress.env();
 
 describe("Lesson page", () => {
@@ -39,7 +41,7 @@ describe("Lesson page", () => {
   });
 
   it("back link button should exist", () => {
-    cy.get("a[data-back-link").should("have.text", "Back");
+    cy.get("a[data-back-link").should("have.text", "Назад");
     cy.get("a[data-back-link]").click();
     cy.location("pathname").should("eq", "/lessons");
     cy.go("back");
@@ -69,6 +71,14 @@ describe("Lesson page", () => {
       );
 
       cy.get("div[data-article-body] p").should("have.text", paragraph.content);
+    });
+
+    it("list", () => {
+      const list = data.content.find((chunk) => chunk.type === "list");
+
+      list.content.map((item) => {
+        cy.contains(item).should("exist");
+      });
     });
   });
 

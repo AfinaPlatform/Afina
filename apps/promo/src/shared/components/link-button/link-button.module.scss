@@ -11,6 +11,14 @@
   font-size: 16px;
   box-sizing: border-box;
   transition: 0.3s;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $laptop) {
+    font-size: 24px;
+  }
 }
 
 .root:hover {

@@ -4,6 +4,8 @@ import ArticleHead from "@/bundles/lessons/components/article-head";
 import type { Lesson as LessonType } from "@/bundles/lessons/types";
 import fetchLessonById from "@/bundles/lessons/api/fetchLessonById";
 import { notFound } from "next/navigation";
+import LinkButton from "@/shared/components/link-button";
+import css from "./lesson.module.scss";
 
 type LessonProps = Pick<LessonType, "title" | "content">;
 
@@ -12,6 +14,9 @@ export function Lesson({ title, content }: LessonProps) {
     <ArticleContainer>
       <ArticleHead title={title} />
       <ArticleBody content={content} />
+      <div className={css.finishLessonWrapper}>
+        <LinkButton href="/lessons">Завершить урок</LinkButton>
+      </div>
     </ArticleContainer>
   );
 }

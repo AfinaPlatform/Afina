@@ -13,6 +13,14 @@
     {
       "type": "paragraph",
       "content": "Sit reprehenderit duis excepteur non et pariatur. Qui proident exercitation labore mollit qui sunt amet cupidatat et eu sunt. Consectetur veniam aliqua dolore aute aliqua pariatur adipisicing."
+    },
+    {
+      "type": "list",
+      "content": [
+        "Commodo proident adipisicing est qui irure ipsum ex ex excepteur tempor qui aliqua.",
+        "Esse ea fugiat cupidatat enim consectetur cupidatat eu consectetur.",
+        "Velit magna do sit cillum et nostrud exercitation ad."
+      ]
     }
   ]
 }

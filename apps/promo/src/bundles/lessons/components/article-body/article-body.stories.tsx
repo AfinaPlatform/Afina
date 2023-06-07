@@ -1,7 +1,7 @@
 import ArticleBody from "./article-body";
 
 const settings = {
-  title: "bundles/lessons/components/article",
+  title: "bundles/lessons/components/article-body",
   component: ArticleBody,
 };
 
@@ -41,6 +41,10 @@ export const Default = () => (
         {
           type: "header",
           content: "Функции",
+        },
+        {
+          type: "list",
+          content: ["point 1", "point 2"],
         },
         {
           type: "paragraph",

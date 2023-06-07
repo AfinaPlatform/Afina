@@ -22,7 +22,15 @@ type Paragraph = {
   content: string;
 };
 
-type Chunk = Paragraph | Header | Subheader;
+/**
+ * ul
+ */
+type List = {
+  type: "list";
+  content: string[];
+};
+
+type Chunk = Paragraph | Header | Subheader | List;
 
 export type Lesson = {
   id: string;

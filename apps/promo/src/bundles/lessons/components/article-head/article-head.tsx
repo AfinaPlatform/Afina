@@ -11,7 +11,7 @@ export default function ArticleHead({ title }: ArticleHead) {
     <div className={css.root}>
       <div className={css.backLinkWrapper}>
         <LinkButton href="/lessons" data-back-link>
-          Back
+          Назад
         </LinkButton>
       </div>
       <h1 className={css.title}>{title}</h1>

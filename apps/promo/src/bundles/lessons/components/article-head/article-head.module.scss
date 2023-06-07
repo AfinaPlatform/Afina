@@ -3,22 +3,27 @@
 .root {
   margin-bottom: 32px;
 
+  @media (min-width: $tablet) {
+    margin-bottom: 48px;
+  }
+
   @media (min-width: $laptop) {
     margin-bottom: 64px;
   }
 }
 
 .backLinkWrapper {
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   max-width: 100px;
 
   @media (min-width: $laptop) {
     margin-bottom: 64px;
+    max-width: 140px;
   }
 }
 
 .title {
-  font-size: 32px;
+  font-size: 28px;
   line-height: 120%;
   text-align: center;
 

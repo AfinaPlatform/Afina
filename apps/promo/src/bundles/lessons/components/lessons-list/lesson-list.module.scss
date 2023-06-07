@@ -2,7 +2,7 @@
 
 .root {
   font-size: 16px;
-  line-height: 120%;
+  line-height: 140%;
 
   @media (min-width: $tablet) {
     font-size: 20px;
@@ -11,6 +11,17 @@
   @media (min-width: $laptop) {
     font-size: 24px;
   }
+}
+
+.item {
+  border: 2px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 24px;
+  transition: 0.3s;
+}
+
+.item:hover {
+  border: 2px solid #c4bebe;
 }
 
 .root a {

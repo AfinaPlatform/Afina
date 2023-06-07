@@ -1,6 +1,6 @@
 @import "@/styles/design.scss";
 
-.root {
+.item {
   font-size: 16px;
   line-height: 140%;
   color: #4e4c4c;
@@ -11,5 +11,14 @@
 
   @media (min-width: $laptop) {
     font-size: 24px;
+  }
+}
+
+.item::before {
+  content: "—";
+  padding-right: 8px;
+
+  @media (min-width: $laptop) {
+    padding-right: 12px;
   }
 }

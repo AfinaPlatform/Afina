@@ -14,7 +14,7 @@ export default function LessonsList({ links }: LessonsListProps) {
         const { id, title } = lesson;
 
         return (
-          <li data-lesson-item key={id}>
+          <li data-lesson-item key={id} className={css.item}>
             <Link href={getLessonHref(lesson)}>{title}</Link>
           </li>
         );
