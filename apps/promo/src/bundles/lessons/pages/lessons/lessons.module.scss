@@ -1,0 +1,10 @@
+@import "@/styles/design.scss";
+
+.contentWrapper {
+  max-width: 980px;
+  margin: 0 auto;
+
+  @media (min-width: $laptop) {
+    margin-top: 60px;
+  }
+}

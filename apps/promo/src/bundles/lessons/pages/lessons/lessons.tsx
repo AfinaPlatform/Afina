@@ -4,6 +4,7 @@ import NoLessons from "@/bundles/lessons/components/no-lessons";
 import BaseLayout from "@/shared/layout/base";
 import type { Lesson } from "@/bundles/lessons/types";
 import fetchLessons from "@/bundles/lessons/api/fetchLessons";
+import css from "./lessons.module.scss";
 
 export default async function Lessons() {
   const lessons: Lesson[] = await fetchLessons();
@@ -12,10 +13,10 @@ export default async function Lessons() {
     <BaseLayout
       header={<H1>Уроки</H1>}
       content={
-        <>
+        <div className={css.contentWrapper}>
           {lessons.length === 0 && <NoLessons />}
           {lessons.length > 0 && <LessonsList links={lessons} />}
-        </>
+        </div>
       }
     ></BaseLayout>
   );
