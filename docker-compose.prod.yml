@@ -26,8 +26,10 @@ services:
     container_name: afina_prod_nginx
     image: nginx
     ports:
-      - "80:80"
+      - "443:443"
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - /etc/ssl/www.afina-platform.ru.csr:/etc/ssl/www.afina-platform.ru.csr
+      - /etc/ssl/www.afina-platform.ru.key:/etc/ssl/www.afina-platform.ru.key
     depends_on:
       - promo
