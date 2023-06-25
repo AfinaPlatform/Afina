@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shared/link-button snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="root"
+    href="/"
+  >
+    Click
+  </a>
+</DocumentFragment>
+`;

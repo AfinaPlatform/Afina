@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shared/p snapshot 1`] = `
+<DocumentFragment>
+  <p
+    class="root"
+  >
+    Amet duis ea sint anim labore aliqua exercitation laboris officia elit Lorem cupidatat ad culpa.
+  </p>
+</DocumentFragment>
+`;

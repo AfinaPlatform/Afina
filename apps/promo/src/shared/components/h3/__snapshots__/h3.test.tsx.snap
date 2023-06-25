@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shared/h3 snapshot 1`] = `
+<DocumentFragment>
+  <h3
+    class="root"
+  >
+    Hello
+  </h3>
+</DocumentFragment>
+`;

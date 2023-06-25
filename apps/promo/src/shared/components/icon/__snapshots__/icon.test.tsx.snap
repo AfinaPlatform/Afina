@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shared/icon snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="root"
+  >
+    icon
+  </div>
+</DocumentFragment>
+`;

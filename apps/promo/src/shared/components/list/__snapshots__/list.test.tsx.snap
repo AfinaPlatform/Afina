@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shared/list snapshot 1`] = `
+<DocumentFragment>
+  <ul
+    class="list"
+    data-list="true"
+  >
+    <li
+      class="item"
+      data-list-item="true"
+    >
+      item1
+    </li>
+  </ul>
+</DocumentFragment>
+`;
