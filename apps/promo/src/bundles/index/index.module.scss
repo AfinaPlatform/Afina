@@ -22,6 +22,11 @@
   @media (min-width: $tablet) {
     font-size: 64px;
   }
+
+  @media (min-width: $laptop) {
+    text-align: left;
+    font-size: 92px;
+  }
 }
 
 .headerWrapper {
@@ -35,6 +40,11 @@
 
   @media (min-width: $tablet) {
     font-size: 24px;
+  }
+
+  @media (min-width: $laptop) {
+    text-align: left;
+    font-size: 28px;
   }
 }
 
@@ -54,6 +64,7 @@
 
   @media (min-width: $laptop) {
     max-width: 800px;
+    text-align: left;
   }
 }
 
@@ -69,4 +80,34 @@
 .startWrapper {
   width: 200px;
   margin: 0 auto;
+
+  @media (min-width: $laptop) {
+    margin: initial;
+  }
+}
+
+.grid {
+  @media (min-width: $laptop) {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+  }
+}
+
+.illustrationArea {
+  display: none;
+
+  @media (min-width: $laptop) {
+    display: block;
+    justify-self: center;
+  }
+}
+
+.illustrationWrapper {
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
